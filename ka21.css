@@ -222,3 +222,10 @@ details.fold[open] > summary::after { transform: rotate(-135deg); margin-top: 4p
 @keyframes spin { to { transform: rotate(360deg); } }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+.field[hidden] { display: none; }
+
+/* Section label with an action on the right (e.g. "Bills · 4"  + Add bill) */
+.section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 22px 0 8px; }
+.section-head .section-label { margin: 0; }
+.section-head .link-btn { min-height: 32px; font-size: .9rem; text-decoration: none; display: inline-flex; align-items: center; }

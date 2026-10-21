@@ -74,6 +74,7 @@ No web fonts. System fonts only, so pages load instantly and feel native on iPho
 | Page header | `header.page-head > .eyebrow + h1 + .sub` | Eyebrow is usually the date or context |
 | Back link | `a.back` | Adds a ‹ chevron |
 | Section label | `.section-label` | Uppercase small label above a group |
+| Section head | `.section-head > .section-label + a.link-btn` | Label with an action on the right ("+ Add") |
 | Card | `.card` (`.card.pad` for padding) | Surface + border + radius + shadow |
 | List in a card | `ul.list.card > li > .row > .main(.name,.meta) + .end + .chevron` | Rows divided by `--line`; `.chevron` for rows that open a page |
 | Collapsible card | `details.fold.card > summary` | Chevron rotates when open |
