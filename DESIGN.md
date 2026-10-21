@@ -75,16 +75,17 @@ No web fonts. System fonts only, so pages load instantly and feel native on iPho
 | Back link | `a.back` | Adds a ‹ chevron |
 | Section label | `.section-label` | Uppercase small label above a group |
 | Card | `.card` (`.card.pad` for padding) | Surface + border + radius + shadow |
-| List in a card | `ul.list.card > li > .row > .main(.name,.meta) + .end` | Rows divided by `--line` |
+| List in a card | `ul.list.card > li > .row > .main(.name,.meta) + .end + .chevron` | Rows divided by `--line`; `.chevron` for rows that open a page |
 | Collapsible card | `details.fold.card > summary` | Chevron rotates when open |
 | Tab bar | `nav.tabbar > a(.active) > svg + span` | 3–5 tabs |
-| Buttons | `.btn`, `.btn.secondary`, `.btn.small`, `.link-btn`, `.link-btn.danger`, `.round-btn` | One primary `.btn` per area |
+| Buttons | `.btn`, `.btn.secondary`, `.btn.secondary.danger`, `.btn.small`, `.link-btn`, `.link-btn.danger`, `.round-btn` | One primary `.btn` per area |
 | Segmented control | `.segmented > button[aria-pressed]` (`.mini` variant) | For view switches |
 | Pill / filter | `.pill[aria-pressed]` | Toggleable filter chip |
 | Chip | `.chip`, `.chip.status` | Read-only metadata |
 | Tag | `.tag` + `.good` / `.caution` / `.bad` / `.plain` | Tiny uppercase label inside text |
 | Badge | `.badge` | Solid orange "Today"-style marker |
-| Form field | `.field > label + input/select/textarea + .hint` | `.field-row` lays fields side by side |
+| Form field | `.field > label(+ .req) + input/select/textarea + .hint` | `.field-row` lays fields side by side; required fields end their label with `<span class="req">*</span>`; `.field.has-error` + `.field-error` for messages |
+| Form buttons | `.form-actions > .btn + .link-btn` | Save + Cancel under a form |
 | Switch | `label.toggle > input[type=checkbox] + text` | iOS-style switch |
 | Checkbox | `input.check[type=checkbox]` | Rounded square, green when checked |
 | Callout | `.card.callout` | Orange-tinted notice |
