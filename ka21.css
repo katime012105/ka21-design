@@ -179,7 +179,7 @@ details.fold[open] > summary::after { transform: rotate(-135deg); margin-top: 4p
 }
 .segmented button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
 .segmented.mini { margin: 0; padding: 2px; border-radius: 10px; }
-.segmented.mini button { min-height: 34px; padding: 0 12px; font-size: .85rem; border-radius: 8px; }
+.segmented.mini button { white-space: nowrap; min-height: 34px; padding: 0 12px; font-size: .85rem; border-radius: 8px; }
 
 /* ---------- Forms ---------- */
 .field { display: grid; gap: 6px; margin-bottom: 14px; align-content: start; }
