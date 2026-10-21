@@ -1,0 +1,14 @@
+{
+  "name": "ka21-design",
+  "version": "1.0.0",
+  "description": "Shared ka21.me design system: stylesheet, docs and app-icon renderer",
+  "private": true,
+  "type": "module",
+  "files": ["ka21.css", "DESIGN.md", "icons/render-icons.mjs"],
+  "scripts": {
+    "icons": "node icons/render-icons.mjs"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}
