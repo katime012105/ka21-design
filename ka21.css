@@ -189,6 +189,7 @@ details.fold[open] > summary::after { transform: rotate(-135deg); margin-top: 4p
   width: 100%; min-height: 46px; padding: 0 12px; border-radius: var(--radius-sm); border: 1px solid var(--line);
   background: var(--surface); color: var(--ink); font: inherit;
   font-size: 16px; /* 16px+ stops iPhone from zooming in on focus */
+  min-width: 0;     /* date boxes have a built-in minimum width that can overflow a half-width column */
 }
 .field textarea { padding: 10px 12px; min-height: 90px; resize: vertical; }
 .input:focus, .field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--accent); outline-offset: 0; }
